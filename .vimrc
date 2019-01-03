@@ -13,6 +13,10 @@ call plug#end()
 
 let g:go_fmt_command = "goimports"
 
+if has("gui_win32")
+    set guifont=Monaco:h9
+endif
+
 func! WordProcessor()
     " movement changes
     map j gj
