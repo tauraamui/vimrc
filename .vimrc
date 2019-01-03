@@ -6,6 +6,7 @@ Plug 'zchee/deoplete-go', { 'do': 'make' }
 Plug 'fatih/vim-go'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
+Plug 'alvan/vim-closetag'
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#go#gocode_binary = '~/go/bin/gocode'
 call plug#end()
