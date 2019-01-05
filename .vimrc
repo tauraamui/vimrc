@@ -32,6 +32,11 @@ func! WordProcessor()
 endfu
 com! WP call WordProcessor()
 
+" remove annoying menu and toolbar from gVIM
+set guioptions -=m
+set guioptions -=T
+set guioptions -=r
+
 set number
 syntax enable
 colo monokai 
