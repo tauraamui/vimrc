@@ -13,6 +13,8 @@ call plug#end()
 
 let g:go_fmt_command = "goimports"
 
+set guifont=DejaVu\ Sans\ Mono\ 9
+
 if has("gui_win32")
     set guifont=Monaco:h9
 endif
@@ -33,10 +35,9 @@ endfu
 com! WP call WordProcessor()
 
 " remove annoying menu and toolbar from gVIM
-set guioptions -=m
-set guioptions -=T
-set guioptions -=r
+set guioptions = 
 
+"show line numbers
 set number
 syntax enable
 colo monokai 
