@@ -14,6 +14,9 @@ call plug#end()
 
 let g:go_fmt_command = "goimports"
 
+"<TAB>: completion
+inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+
 set guifont=DejaVu\ Sans\ Mono\ 9
 
 if has("gui_win32")
