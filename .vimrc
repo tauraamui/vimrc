@@ -1,5 +1,4 @@
 call plug#begin('~/.vim/plugged')
-Plug 'patstockwell/vim-monokai-tasty'
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
@@ -9,6 +8,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'alvan/vim-closetag'
 Plug 'mhinz/vim-startify'
+Plug 'logico-dev/typewriter'
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
@@ -43,7 +43,7 @@ com! WP call WordProcessor()
 set guioptions = 
 
 " set colorscheme
-colorscheme vim-monokai-tasty
+colorscheme typewriter-night 
 
 "show line numbers
 set number
