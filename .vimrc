@@ -1,4 +1,5 @@
-call plug#begin()
+call plug#begin('~/.vim/plugged')
+Plug 'patstockwell/vim-monokai-tasty'
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
@@ -8,10 +9,10 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'alvan/vim-closetag'
 Plug 'mhinz/vim-startify'
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#sources#go#gocode_binary = '~/go/bin/gocode'
 call plug#end()
 
+let g:deoplete#enable_at_startup = 1
+let g:deoplete#sources#go#gocode_binary = '~/go/bin/gocode'
 let g:go_fmt_command = "goimports"
 
 "<TAB>: completion
@@ -41,10 +42,11 @@ com! WP call WordProcessor()
 " remove annoying menu and toolbar from gVIM
 set guioptions = 
 
+" set colorscheme
+colorscheme vim-monokai-tasty
+
 "show line numbers
 set number
-syntax enable
-colo monokai 
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
