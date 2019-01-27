@@ -8,7 +8,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'vim-airline/vim-airline'
 Plug 'alvan/vim-closetag'
 Plug 'mhinz/vim-startify'
-Plug 'logico-dev/typewriter'
 call plug#end()
 
 let g:deoplete#enable_at_startup = 1
@@ -43,7 +42,8 @@ com! WP call WordProcessor()
 set guioptions = 
 
 " set colorscheme
-colorscheme typewriter-night 
+syntax enable
+colo monokai
 
 "show line numbers
 set number
